@@ -1,22 +1,121 @@
-
+Modo IA
+Tudo
+Imagens
+Vídeos
+Notícias
+Vídeos curtos
+Shopping
 <!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>site</title>
-    </head>
-    <body>
-        <header>
-            <main>
-              <h1>meu site tech</h1>
-               <p>vou compartilhar conhcimentos sobre tecnologia e programação</p>
-               </header>
-               <h2>meu primeiro post</h2> 
-                <p>por: Muca paludetto</p>
-                 <p>boas-vindas ao meu novo site aqui vou 
-                 compartilhar dicas de programação e curiosidade
-                  da area de tecnologia. </p>  
-                 </main>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Futebol Clube</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --primary: #00ff66;
+            --text: #f0f6fc;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: var(--card-bg);
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid var(--primary);
+        }
+        h1 { margin: 0; font-size: 2rem; color: var(--primary); }
+        main {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            padding: 20px;
+            border: 1px solid #30363d;
+        }
+        h2 { color: var(--primary); margin-top: 0; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #30363d;
+        }
+        th { color: var(--primary); }
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #8b949e;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>⚽ Central do Futebol</h1>
+    </header>
+
+    <main>
+        <div class="grid">
+            <!-- Bloco de Notícias -->
+            <div class="card">
+                <h2>Últimas Notícias</h2>
+                <p><strong>🔥 Mercado da Bola:</strong> Grande craque assina contrato milionário com novo clube.</p>
+                <p><strong>🏆 Grande Final:</strong> Decisão do campeonato acontece neste domingo às 16h.</p>
+            </div>
+
+            <!-- Tabela de Classificação -->
+            <div class="card">
+                <h2>Classificação</h2>
+                <table>
+                    <tr>
+                        <th>Pos</th>
+                        <th>Time</th>
+                        <th>Pts</th>
+                    </tr>
+                    <tr>
+                        <td>1°</td>
+                        <td>Time Verde</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>2°</td>
+                        <td>Time Azul</td>
+                        <td>22</td>
+                    </tr>
+                    <tr>
+                        <td>3°</td>
+                        <td>Time Vermelho</td>
+                        <td>19</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Central do Futebol - Criado para o GitHub Pages</p>
+    </footer>
+
 </body>
 </html>
